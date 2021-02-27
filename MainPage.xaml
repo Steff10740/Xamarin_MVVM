@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PX3.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout VerticalOptions="Center"  Padding="10" Spacing="15" >
+
+        <Image Source="LogoP" />
+
+        <Entry Placeholder="Email" BackgroundColor="Silver" />
+        <Entry Placeholder="Password" BackgroundColor="Silver"/>
+
+
+
+        <Button Text="Login" x:Name="Login" HorizontalOptions="FillAndExpand" 
+                VerticalOptions="Center" BackgroundColor="Red" TextColor="White" 
+                FontSize="Caption" Clicked="Login_Clicked"/>
+
+        <Button Text="Register" x:Name="Register" 
+               HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" 
+                TextColor="Red" FontSize="Caption" Clicked="Register_Clicked"/>
+
+    </StackLayout>
+</ContentPage>
