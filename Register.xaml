@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PX3.Register"
+             BackgroundColor="White"
+             >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"  Padding="10" Spacing="15" >
+
+            <Image Source="LogoP" />
+
+            <Entry x:Name="rName" Placeholder="Name"  BackgroundColor="Silver"  />
+            <Entry x:Name="rEmail" Placeholder="Email"   BackgroundColor="Silver" />
+            <Entry x:Name="rPw" Placeholder="Password"   BackgroundColor="Silver" IsPassword="True"/>
+            <Entry x:Name="rCPw" Placeholder="Confirm Password"  BackgroundColor="Silver" IsPassword="True"/>
+
+            <Button Text="Register" x:Name="Register2" 
+               HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="Red"
+                TextColor="White" FontSize="Caption" Clicked="Register2_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
